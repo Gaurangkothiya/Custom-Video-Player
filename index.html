@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Video Player</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Custom style sheet below -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- Link to Font Awesome style sheet below -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Link to JavaScript file below -->
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+	<div class="alert alert-success" style="text-align:center;">
+		<h3> As a big fan of Animes, I have collected some of the best AMV. Have fun 😃</h3>
+	</div>
+	<div class="card-columns">
+		<div id="smplVideoPlayer" class="card">
+			<h1>Custom Video Player </h1>
+
+			<div id="videoContainer">
+				<video id="myVideo" poster="itachi.png">
+					<source src="itachi.mp4">
+					Your browser does not support the video file format. Please update the browser.
+				</video>
+			</div>
+
+			<div id="streamContainer">
+				<div id="streamBar">
+				</div>
+			</div>
+
+			<div id="controlsContainer">
+				<i id="playButton" class="fa fa-play fa-3x"></i>
+
+				<div id="duration">
+					00:00 / 00:00
+				</div>
+
+				<i id="volumeButton" class="fa fa-volume-up fa-3x"></i>
+
+				<div id="volumeContainer">
+					<div id="volumeBar">
+					</div>
+				</div>
+
+				<i id="fullscreenButton" class="fa fa-arrows-alt fa-3x"></i>
+			</div>
+			<div>
+				<p id="status">Press play to start the video.</p>
+			</div>
+		</div>
+		<div class="card" id="scroll-menu">
+			<div class='card-title'>
+				<h1> All Videos</h1>
+			</div>
+			<div class='card-body'>
+				<div class='card-title' id='first-video' style="cursor: pointer;">
+					<h6> Madara Uchiha - AMV</h6>
+					<img src="madara.jpg" class="img-thumbnail" alt="Cinque Terre" width="270" height="200">
+				</div>
+
+				<br>
+				<div class='card-title' id='second-video' style="cursor: pointer;">
+					<h6> Mask Off (Anime Transition)</h6>
+					<img src="zenitsu.jpg" class="img-thumbnail" alt="Cinque Terre" width="270" height="200">
+				</div>
+
+				<br>
+				<div class='card-title' id='third-video' style="cursor: pointer;">
+					<h6> Naruto - AMV</h6>
+					<img src="naruto.jpg" class="img-thumbnail" alt="Cinque Terre" width="270" height="200">
+				</div>
+
+				<br>
+				<div class='card-title' id='forth-video' style="cursor: pointer;">
+					<h6> Your Name - AMV</h6>
+					<img src="yourname.jpg" class="img-thumbnail" alt="Cinque Terre" width="270" height="200">
+				</div>
+
+				<br>
+				<div class='card-title' id='fifth-video' style="cursor: pointer;">
+					<h6> Itachi Uchiha - AMV</h6>
+					<img src="itachi.png" class="img-thumbnail" alt="Cinque Terre" width="270" height="200">
+				</div>
+			</div>
+
+		</div>
+
+</body>
+
+</html>
